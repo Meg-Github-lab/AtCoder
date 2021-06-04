@@ -1,5 +1,3 @@
-n = int(input())
+a, b, c = map(int, input().split())
 
-print("YES") if n%3 == 0 or "3" in str(n) else print("NO")
-
-# https://note.nkmk.me/python-if-conditional-expressions/
+print(21 - (a+b+c))
