@@ -1,8 +1,5 @@
-s = input()
+AtCoder_contest = ['ABC', 'ARC', 'AGC', 'AHC']
 
-s_replace = s.translate(str.maketrans({'6': '9', '9': '6'}))
-s_reverse = s_replace[::-1]
-
-print(s_reverse)
-
-# https://techacademy.jp/magazine/19188
+s_list = [input() for _ in range(3)]
+ans = list(set(AtCoder_contest) - set(s_list))
+print(ans[0])

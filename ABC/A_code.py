@@ -1,3 +1,8 @@
-a, b, c = map(int, input().split())
+st_list = list(input().split())
 
-print(21 - (a+b+c))
+arrange_list = sorted(st_list)
+
+if arrange_list[0] == st_list[0]:
+    print('Yes')
+else:
+    print('No')
