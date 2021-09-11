@@ -1,9 +1,6 @@
-n =int(input())
-q_list = [0]*n
+n = int(input())
 
-p_list = list(map(int, input().split()))
-
+str_list = []
 for i in range(n):
-    q_list[p_list[i]-1] = i+1
-
-print(*q_list) 
+    str_list.append(list(input().split()))
+print(str_list)
