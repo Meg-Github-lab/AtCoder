@@ -1,5 +1,10 @@
-n = int(input())
-s = input()
+x = int(input())
 
-predict = 'Yes' if s[n-1] == 'o' else 'No'
-print(predict)
+if 0 <= x < 40:
+    print(40-x)
+elif 40 <= x < 70:
+    print(70-x)
+elif 70 <= x < 90:
+    print(90-x)
+elif 90 <= x:
+    print('expert')

@@ -1,8 +1,6 @@
-p = map(int, input().split())
-alpha = ''
+s1 = input()
+s2 = input()
+s3 = input()
+t = input()
 
-num2alpha = lambda c: chr(c+96)
-for num in p:
-    alpha = alpha+ num2alpha(num)
-
-print(alpha)
+print(t.replace('1', s1).replace('2', s2).replace('3', s3))
