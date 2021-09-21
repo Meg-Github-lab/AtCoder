@@ -1,10 +1,12 @@
-x = int(input())
+n = int(input())
+for _ in range(n):
+    n2, n3, n4 = map(int, input().split())
+    cnt = 0
+    n2_list = ['*']*n2
+    n3_list = ['*']*n3
+    n4_list = ['*']*n4
 
-if 0 <= x < 40:
-    print(40-x)
-elif 40 <= x < 70:
-    print(70-x)
-elif 70 <= x < 90:
-    print(90-x)
-elif 90 <= x:
-    print('expert')
+    if n3//2 <= n4:
+        cnt += n3//2
+        n4 -= n3//2
+        
