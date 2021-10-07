@@ -1,8 +1,22 @@
-p = map(int, input().split())
-alpha = ''
+import sys
 
-num2alpha = lambda c: chr(c+96)
-for num in p:
-    alpha = alpha+ num2alpha(num)
+S = input()
+T = input()
 
-print(alpha)
+if S == T:
+    print('Yes') 
+    sys.exit()
+
+no_match_list = []
+for i in range(len(S)):
+    if S[i] == T[i]:
+        continue
+
+    elif S[i] != T[i]:
+        no_match_list.append(i)
+
+
+if len(no_match_list) == 2 and S[no_match_list[0]] == T[no_match_list[1]] and S[no_match_list[1]] == T[no_match_list[0]] and no_match_list[1] - no_match_list[0] == 1:
+    print('Yes')
+else:
+    print('No')

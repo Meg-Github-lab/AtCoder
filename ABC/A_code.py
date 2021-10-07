@@ -1,5 +1,3 @@
-n = int(input())
-s = input()
+A, B = map(int, input().split())
 
-predict = 'Yes' if s[n-1] == 'o' else 'No'
-print(predict)
+print(32 ** (A - B))
