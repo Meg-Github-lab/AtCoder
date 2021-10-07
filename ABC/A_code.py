@@ -1,8 +1,5 @@
-st_list = list(input().split())
+n = int(input())
+s = input()
 
-arrange_list = sorted(st_list)
-
-if arrange_list[0] == st_list[0]:
-    print('Yes')
-else:
-    print('No')
+predict = 'Yes' if s[n-1] == 'o' else 'No'
+print(predict)
