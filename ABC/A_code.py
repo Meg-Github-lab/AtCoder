@@ -1,3 +1,3 @@
-A, B = map(int, input().split())
+N = int(input())
 
-print(32 ** (A - B))
+print(N // 2 if N % 2 == 0 else N // 2 + 1)
